@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>第一章javascript</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		img{
+			width:50px;
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+	<div>javascript</div> <!-- onClick="fn1();fn2()" -->
+	<span id="spanid">fdfdfdf</span>	
+	<script src="../js/jquery.min.js"></script>
+	<script>
+		"use strict";
+		// var a = 9;
+		// var b = 8;
+		// var c = 6;
+		// var r = [a+b,,a+c,];
+		var obj = {
+			$23_aa: 'jkkj'
+		}
+		console.log(obj.$23_aa)
+		// var a = undefined;
+		// a = 3;
+		 // console.log(a);
+		// function fn (a) {
+		// 	a = a + 2;
+		// 	console.log(a);
+		// }
+		// fn(9);
+		// console.log(this);
+		// var ss = {a: 89};
+		// console.log(ss.toString())
+		// console.log(ss + 34);
+		// var ss = [98];
+		// console.log(ss == 98)
+		// var ss = new Date();
+		// console.log(ss.valueOf());
+		// console.log(String(ss));
+		// console.log(Number(ss));
+		// console.log(typeof (ss - 1));
+		// var ss = {
+		// 	a: '89',
+		// 	b: '878'
+		// };
+		// delete ss
+		// console.log(ss)
+		// var ss = new Boolean();
+		// console.log(ss.toString())
+		// function fn () {
+		// 	this.zhangsan = 'lisi';
+		// }
+		// var ss = new fn();
+		// var ss = 99;
+		// var fn = new Boolean();
+		// console.log(fn.valueOf())
+		// console.log((function fn () {}).toString())
+		// var ss = new Boolean(false);
+		// console.log(new Boolean(false) == true);
+		// if (ss) {
+			// alert(009);
+		// }
+		// var a = new String();
+		// console.log(a);
+		// var a = '9089';
+		// var b = +a;
+		// console.log(b);
+		// var obj = Object(undefined);
+		// obj.name = 'Hang';
+		// console.log(obj);
+		// console.log(Object(undefined));
+		// function fn () {}
+		// console.log(Number(fn))
+		// var obj = [1,3,4,5];
+		// obj.join();
+		// console.log(obj.join());
+		// console.log(typeof obj);
+		// var s = NaN + 'zhangsan';
+		// var s1 = "4" * "8";
+		// var ss = new Number('3333');
+		// ss.len = 44;
+		
+		// var rr = ss.len;
+		// var sss = ss.toString();
+		// console.log(typeof ss);
+		// var s = '990909';
+		// console.log();
+		// s[2] = 'uy';
+		// console.log(undefined == undefined);
+		// var lin = new String(s);
+		// console.log(lin == s);
+		// var n = new Number('33333.999');
+		// console.log(n.toString());
+		// var s = new String('jkjkkj');
+		// console.log(typeof s);
+		// var aa = 90;
+		// this.abcd = 444;
+		// function ab () {
+			// console.log(this);
+			// this.abctt = 444;
+			// console.log(89898);
+		// }
+		// ab();
+		// ab.call(this);
+		// var ss = new ab()
+		// console.log(ss.abc);
+		// console.log(window);
+		// console.log(JSON);
+		// console.log(Math);
+		// console.log(window);
+// 		var s = '23222\
+// 34444444\
+// 433';
+ 		// var s = π;
+		// console.log('\u03c0');
+		// var str = 'uikdjfkdjfkdj';
+		// var obj = [];
+		// if (obj) {
+		// 	alert(90);
+		// }
+		// var aa = 33;
+		// var sss = true + '';
+		// function fn (a,b) {
+		// 	console.log(b);
+		// }
+		// fn(2)
+		// var ss = 0/0;
+		// console.log(ss != ss)
+		// true.toString();
+		// console.log(typeof sss);
+		// console.log()
+
+		// str.replace('u','H');
+		// console.log(str[0]);
+		// console.log(\ud835\udc52);
+		// console.log(989e2);
+		// console.log(isNaN(1/0));
+		// var sp = document.getElementById('spanid');
+		// sp.onclick = function () {
+		// 	console.log('jkfjdkfjdkfjk');
+		// }
+		// console.log(window);
+		// var a = 33
+		// ;var b = 44;
+		// console.log(a)
+		// function fn () {
+		// 	return
+		// 	true
+		// }
+		// console.log(fn())
+		// var x = 1,y=2;
+		// x
+		// ++
+		// y
+		// console.log(y);
+
+		// var a = 9; var b = 89;
+
+		// console.log(global);
+
+		// var private = 'jkjk';
+		// console.log(private);
+		// var zπ = 'jjjj';
+		// console.log(zπ);
+		// console.log(U+00A1);
+		// console.log($);
+		// $(function () {
+		// 	var images = document.getElementsByTagName('img');
+		// 		console.log(images);
+		// })
+		// window.onload = function () {
+		// 	var images = document.getElementsByTagName('img');
+		// 	console.log(images);
+		// }
+		// var obj = {
+		// 	name: 'zhangsan',
+		// 	age: 22
+		// }
+		// var arr = [1,2,3,4];
+		// console.log(arr[4]);
+		// console.log(obj.haoa);
+		// console.log(obj['age']);
+		// function fn1 () {
+		// 	console.log('fn1');
+		// }
+		// function fn2 () {
+		// 	console.log('fn2');
+		// }
+		// function Point (x,y){
+		// 	this.x = x;
+		// 	this.y = y;
+		// }
+		// var ss = Point(3,5);
+		// Point(3,5);
+		// console.log(ss);
+	</script>
+</body>
+</html>
