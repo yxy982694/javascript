@@ -13,25 +13,146 @@
 			width:50px;
 			height:50px;
 		}
+		a{
+			display: none;
+		}
 	</style>
 </head>
 <body>
-	<a href="###">223fdfdf</a>
+	<a id="aa" href="###">223fdfdf</a>
 	<div>javascript</div> <!-- onClick="fn1();fn2()" -->
 	<span id="spanid">fdfdfdf</span>	
 	<script src="../js/jquery.min.js"></script>
 	<script>
-	989878989
+	// 989878989
 		"use strict";
+		var arr = [{
+			id: 'M00001',
+			name: 'po'
+		}];
+		var ss = function fn () {
+			console.log(ss);
+		}
+		var aaa = document.getElementById('aa');
+		console.log(aaa);
+		console.log(ss());
+		// var arr = [1,,,,4,5];
+		// var arr1 = [];
+		// for (var i =0;i<arr.length;i++) {
+		// 	arr1[i] = arr[i];
+		// }
+		// for (var i in arr) {
+			// arr1[i] = arr[i];
+		// }
+		// arr.length = 2;
+		// console.log(3 in arr1);
+		// var arr = [,,,];
+		// var arr2 = new Array(4);
+		// console.log(1 in arr2);
+		// var fu = {
+		// 	a: '1',
+		// 	b: '2',
+		// 	jk: function () {}
+		// };
+		// var zi = Object.create(fu);
+		// zi.zhang = 'lisi';
+		// var keys = Object.getOwnPropertyNames(zi);
+		// var arr1 = [1,2,3];
+		// var arr = [];
+		// for (var i=0;i<keys.length;i++) {
+		// 	arr[i] = keys[i];
+		// }
+		// for (var i in zi) {
+		// 	arr[i] = zi[i];
+		// }
+		// for (var i in arr1) {
+		// 	arr[i] = arr1[i];
+		// }
+		// console.log(arr);
+		// var arr = [1,2,3,4];
+		// arr['za'] = 'lisi';
+		// console.log(arr);
+		// var ss = {
+		// 	a: 'a',
+		// 	b: 'b'
+		// }
+		// ss['张三'] = 'lisi';
+		// console.log(ss);
+		// var ojjj = Object.preventExtensions(ss);
+		// var ojjj = Object.seal(ss);
+		// console.log(Object.isSealed(ss));
+		// console.log(ojjj);
+		// ss.a = '89';
+		// delete ss.a;
+		// console.log(ss);
+		// var serialnum = {
+			// n: 0,
+			// get next() {return this.n++},
+			// set next(n) {this.n = n}
+		// }
+		// console.log(serialnum);
+		// var ss = new Date();
+		// console.log(classof(ss));
+		// var p = new Date();
+		// var o = {
+		// 	a: 'a',
+		// 	b: 'b'
+		// };
+		// var p = Object.create(o);
+		// console.log(ss instanceof Date);
+		// console.log(p.__proto__ === Object.getPrototypeOf(p));
+		// var busins = 'despoit';
+		// var title = {};
+		// title[busins+'Title'] = 'zhangsan';
+		// console.log(title);
+		// title = {};
+		// console.log(title);
+		// console.log(Date.now());
+		// var start = new Date().valueOf();
+		// for (var i=0;i<1200000000;i++) ;
+		// var end = new Date().valueOf();
+		// console.log('停留了' + parseInt((end-start)/1000) + '秒');
+		// var ss = document.getElementById('spanFDFid');
+		// console.log(ss);
+		// var a ={
+		// 	p: {
+		// 		x: 1
+		// 	}
+		// }
+		// var b = a.p;
+		// delete a.p
+		// console.log(delete a.c);
+		// Object.prototype = 0;
+		// console.log(Object.prototype);
+		// var ss = {
+		// 	for: 23,
+		// 	a: '33'
+		// }
+		// for (var s in ss) {
+		// 	console.log(ss[s]);
+		// }
+		// ss['c'] = 89;
+		// console.log(ss);
+		// function inherit (p) {
+		// 	if (p == null) throw TypeError();
+		// 	if (Object.create) return Object.create(p);
+		// 	var t = typeof p;
+		// 	if (t !== "object" && t !=="function") throw TypeError();
+		// 	function f() {}
+		// 	f.prototype = p;
+		// 	return new f();
+		// }
+		// var ss = inherit({a: '1'});
+		// console.log(ss);
 		// var obj = {
 		// 	'': 'a',
 		// 	b: 'b'
 		// };
-		var obj = Object.create({
-			a: 'a',
-			b: 'b'
-		});
-		console.log(obj);
+		// var obj = Object.create({
+		// 	a: 'a',
+		// 	b: 'b'
+		// });
+		// console.log(obj);
 		// function fn () {
 		// 	console.log(arguments.callee);
 		// }
