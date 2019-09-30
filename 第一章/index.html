@@ -39,11 +39,66 @@
 	<script src="../js/jquery.min.js"></script>
 	<script>
 		"use strict";
-		function fn (a,b) {
+		function fn () {
 			this.name = 'zhangsan';
 			this.age = 24;
 		}
-		console.log(fn.__proto__ === Function.prototype);
+		fn.prototype = {
+			constructor: fn,
+			getData: function () {
+				return '个体'
+			}
+		}
+		console.log(fn.prototype.constructor === fn);
+		// var fu = {
+		// 	fu: 'fu'
+		// };
+		// var zi1 = Object.create(fu);
+		// var zi2 = Object.create(fu);
+		// console.log(zi1.constructor === zi2.constructor);
+		// function fn () {}
+		// var f = new fn();
+		// console.log(fn.prototype.__proto__.constructor == Function);
+		// console.log(fn.prototype.constructor === fn);
+		// console.log(f.constructor === fn);
+		// console.log(f.__proto__.constructor === fn);
+		// function fn1 () {}
+		// function fn2 () {}
+		// var ss = {
+		// 	a: 'a'
+		// };
+		// fn1.prototype = ss;
+		// fn2.prototype = ss;
+		// var f1 = new fn1();
+		// var f2 = new fn2();
+		// console.log(fn1.prototype.constructor === fn2.prototype.constructor);
+		// console.log(f1 instanceof fn2);
+		// var ss = {
+		// 	a: 'a'
+		// };
+		// fn1.prototype = ss;
+		// fn2.prototype = ss;
+		// console.log(fn1.prototype.constructor == fn1);
+		// console.log(fn1 == fn2);
+		// console.log(fn1.prototype == fn2.prototype);
+		// console.log(new);
+		// var ss ={
+		// 	a: 'a',
+		// 	b: 'b'
+		// }
+		// fn.prototype = ss;
+		// console.log(fn.prototype);
+		// var obj = {
+		// 	a: 'a',
+		// 	b: 'b'
+		// };
+		// var zi = Object.create(obj);
+		// console.log(zi.__proto__);
+		// function fn (a,b) {
+			// this.name = 'zhangsan';
+			// this.age = 24;
+		// }
+		// console.log(fn.__proto__ === Function.prototype);
 		// console.log(fn.toString());
 		// var obj = {};
 		// var ss = fn.bind();
