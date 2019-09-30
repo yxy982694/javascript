@@ -9,33 +9,129 @@
 			padding:0;
 			margin:0;
 		}
+		div{
+			/* overflow: hidden; */
+		}
 		img{
 			width:50px;
 			height:50px;
 		}
 		a{
-			display: none;
+			/* display: none; */
+			border:1px solid red;
+		}
+		.leftp{
+			/* float:left; */
+			border:1px solid red;
+			width: 100px;
+			height:50px;
+			margin: 10px 0;
 		}
 	</style>
 </head>
 <body>
+	<div>
+		<span class="leftp">ffffff</span>
+	</div>
 	<a id="aa" href="###">223fdfdf</a>
 	<div>javascript</div> <!-- onClick="fn1();fn2()" -->
 	<span id="spanid">fdfdfdf</span>	
 	<script src="../js/jquery.min.js"></script>
 	<script>
-	// 989878989
 		"use strict";
-		var arr = [{
-			id: 'M00001',
-			name: 'po'
-		}];
-		var ss = function fn () {
-			console.log(ss);
+		function fn (a,b) {
+			this.name = 'zhangsan';
+			this.age = 24;
 		}
-		var aaa = document.getElementById('aa');
-		console.log(aaa);
-		console.log(ss());
+		console.log(fn.__proto__ === Function.prototype);
+		// console.log(fn.toString());
+		// var obj = {};
+		// var ss = fn.bind();
+		// var f = new ss();
+		// console.log(f.__proto__ === fn.prototype);
+		// console.log(fn.prototype);
+		// console.log(ss('44'));
+		// console.log(ss.prototype);
+		// console.log(ss.length);
+		// function fn (name) {
+		// 	this.name = name;
+		// }
+		// fn.call(null,'lisi');
+		// console.log(this.name);
+		// console.log(fn.length);
+		// var scope = '全局变量';
+		// function checkscopte () {
+			// var scrope = '局部变量';
+			// var i = 0;
+			// return function () {
+				// return i++;
+			// }
+			// function f () {return scrope}
+			// return f();
+		// }
+		// var ss = checkscopte();
+		// console.log(ss());
+		// console.log(ss());
+		// console.log(ss());
+		// console.log(ss());
+		// console.log(ss());
+		// (function () {
+		// 	alert('090');
+		// })();
+		// (function () {
+		// 	alert('lisi');
+		// }())
+		// var obj = {
+		// 	a: 'a'
+		// };
+		// function fn (n) {
+		// 	n--;
+		// 	console.log(this);
+		// 	if (n > 0) {
+		// 		// fn(n); // 第一次是obj  第二次和第三次都是window了
+		// 		fn.call(this,n);  // 用call可以保证，fn中的this指向同一对象
+		// 	}	
+		// }
+		// fn.call(obj,3);
+		// function fn (a) {
+		// 	if (Array.isArray(a)) {
+		// 		alert('jk');
+		// 	}
+		// }
+		// fn([90]);
+		// function fn () {
+			// console.log(arguments.callee);
+		// }
+		// fn(2);
+		// function fn (x) {
+		// 	console.log(x);
+		// 	arguments[0] = 33;
+		// 	console.log(x);
+		// }
+		// fn(1,2,3,4);
+		// console.log();
+		// function fn (obj,/*optional*/arr) {
+		// 	console.log(arr);
+		// }
+		// fn(undefined,[1,23])
+		// console.log();
+		// function fn () {
+		// 	this.name = 'a';
+		// 	this.age = 24;
+		// 	return 33;
+		// }
+		// var ss = new fn();
+		// console.log(ss);
+		// var arr = [{
+			// id: 'M00001',
+			// name: 'po'
+		// }];
+		// var ss = function fn () {
+			// console.log(ss);
+		// }
+		// var aaa = document.getElementById('aa');
+		// console.log(aaa);
+		// console.log(ss());
 		// var arr = [1,,,,4,5];
 		// var arr1 = [];
 		// for (var i =0;i<arr.length;i++) {
