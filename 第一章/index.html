@@ -4,10 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>第一章javascript</title>
-	<style>
+	<!-- <link title="linkt" id="linkk" rel="stylesheet" href="../css/reset.css"> -->
+	<style id="stylee" title="stylet">
 		*{
 			padding:0;
 			margin:0;
+		}
+		body{
+			height:3000px;
 		}
 		div{
 			/* overflow: hidden; */
@@ -27,29 +31,589 @@
 			height:50px;
 			margin: 10px 0;
 		}
+		#span-arr * {
+			display:none;
+		}
+	.jk{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100px;
+		height:100px;
+		background-color:#abcdef;
+		text-align:center;
+		line-height:100px;
+	}
+	#ppp{
+		width: 100px;
+		height:50px;
+		background-color:red;
+		color: #fff;
+		text-align:center;
+		line-height:50px;
+		padding:10px;
+		border:2px solid yellow;
+	}
+	.dip{
+		width:200px;
+		margin:10px 0 0 50px;
+		border:1px solid red;
+		position:relative;
+		/* position:absolute; */
+		/* top:0; */
+		/* left:0; */
+	}
+	#haoh{
+		position:relative;
+	}
 	</style>
+	<script>
+		// var spanid = 90;
+		// console.log(document);
+		// for (var i=0;i<1000000000;i++) ;
+	</script>
+	<!-- <script src="../js/js2.js" async></script> -->
+	<script src="../js/js1.js"></script>
 </head>
 <body>
-	<div>
+	<!-- <form action="##" onclick="return false;">
+		<input type="text" name="input1">
+		<input type="text" name="input2">
+		<input type="text" name="input3">
+		<input type="submit" value="提交">
+	</form>
+	<div id="span-arr">
 		<span class="leftp">ffffff</span>
+		<span class="leftp">ffffff</span>
+		<span class="leftp">ffffff</span>
+		<span class="leftp">ffffff</span>
+	</div> -->
+	<!-- <a id="aa" href="javascript:alert('lklkl')" class="zhangsan lisi">223fdfdf</a> -->
+	<!-- <a id="aa" href='javascript:
+        var e = "",r = "";
+        do {
+        	e = prompt("Expression: " + e + "\n" + r + "\n", e);
+        	try {
+        		r = "Result: " + eval(e);
+        	} catch (ex) {r = ex;}
+        } while (e);
+        void 0
+	' class="zhangsan lisi">223fdfdf</a> -->
+	<!-- <a id="aazz" name="zzaa" href="javascript:void window.open('about:blank')" class="zhangsan lisi">223fdfdf</a> -->
+	<!-- <iframe id="ifr1" name="ifr" frameborder="1" src="index1.html" border="1" frameborder="0"></iframe>
+	<iframe src="index2.html" frameborder="1"></iframe>
+	<div>javascript</div> --> <!-- onClick="fn1();fn2()" -->
+	<!-- <div id="jkjk">javascriptfdfd</div>
+	<div id="spanid" name="kkkkk">
+		<a href="">
+			<span>jkjk</span>
+			<span>jkjk</span>
+			<span>jkjk</span>
+		</a>
+		<a href=""></a>
+		<a href=""></a>
+	</div>	 -->
+	<!-- <img src="../img/404_03.png" alt="" name="jjj" id="kkk">
+	<label for="haoa" id="lab" data-val="jkk" data-kk="jkjk">
+		<a href="">vfvfv</a>
+		<p>uyu788</p>
+		<i>kkkk</i>
+		ffff
+	</label>
+	<p class="jk">点击</p>
+	<p  id="ppp">点击fdfdf</p>
+	<div class="dip"style="height:100px;overflow:scroll;padding-top:10px;" >
+		<p id="ll">
+			点击fdfdf点击fdfdf
+			点击fdfdf点击fdfdf点击fdfdf
+			点击fdfdf点击fdfdf点击fdfd
+			f点击fdfdf点击fdfdf点击fdfdf点
+			击fdfdf点击fdfdf点击fdfdf
+			点击fdfdf点击fdfdf点击fd
+			fdf点击fdfdf点击fdfdf点击f
+			dfdf点击fdfdf
+		</p>
+	</div> -->
+	<input type="text" name="text4" form="formm"><br>
+	<form action="" id="formm" name="fff">
+		<!-- <input type="hidden">
+		<input type="checkbox">
+		<input type="radio"> -->
+		<input type="text" name="text1" required id="zzaa"><br>
+		<input type="text" name="text2"><br>
+		<input type="text" name="text3"><br>
+		<input type="radio" name="ra">
+		<input type="radio" name="ra" id="raa">
+		<input type="radio" name="ra">
+		<input type="checkbox" name="cb">
+		<input type="checkbox" name="cb">
+		<input type="checkbox" name="cb">
+		<input type="checkbox" name="cb">
+		<select name="sel" id="sell" style="width:100px;">
+			<option value="11">11</option>
+			<option value="22">22</option>
+			<option value="33">33</option>
+			<option value="44">44</option>
+			<option value="55">55</option>
+			<option value="66">66</option>
+		</select>
+		<input type="submit"  id="tijiao">
+		<!-- <button type="submit">提交</button> -->
+		<!-- <input type="reset"> -->
+		<!-- <button type="reset">重置</button> -->
+	</form>
+	<p id="sub">提交</p>
+	<p style="width:100px;display:inline-block;height:40px;border:1px solid red;">zjkjkf</p>
+	<p style="position:relative;left:20px;width:100px;display:inline-block;height:40px;border:1px solid red;">jkjkjkjkjkj</p>
+	<!-- <p style="width:100px;display:inline-block;height:40px;border:1px solid red;">提提交提交交</p> -->
+	<!-- <div class="zhangsan lisi" id="haoh"  style="padding:10px;border:5px solid red;height:100px;width:100px;left:10%;margin:10px 2px 5px 9px;background-color:#333;">
+		<p style="clip:rect(5px 20px 20px 0px);position:absolute;left:0;top:0;background-color:#abcdef;">9fdfdsfdsfsdfdsfdsfdsfdsfdsfdsfdsfdsfdsf9999</p>
+	</div> -->
+	<a href="http://www.baidu.com">百度</a>
+	<div id="shiyan1" style="width:200px;height:150px;line-height:50px;text-align:center;border:1px solid red;">
+	实验按钮1
+	<p id="shiyan2" style="width:100px;height:50px;line-height:50px;text-align:center;border:1px solid red;">实验按钮2</p>
 	</div>
-	<a id="aa" href="###">223fdfdf</a>
-	<div>javascript</div> <!-- onClick="fn1();fn2()" -->
-	<span id="spanid">fdfdfdf</span>	
+	<!-- <p id="shiyan2" style="margin-top:0px;width:100px;height:50px;line-height:50px;text-align:center;border:1px solid red;">实验按钮2</p> -->
 	<script src="../js/jquery.min.js"></script>
-	<script>
+	<script id="sss" type="text/x-custom-data">
+		console.log('dfdfdf');
+	</script>
+	<script type="text/javascript">
 		"use strict";
-		function fn () {
-			this.name = 'zhangsan';
-			this.age = 24;
+		var shiyan1 = document.getElementById('shiyan1');
+		var shiyan2 = document.getElementById('shiyan2');
+		shiyan2.onclick = function (e) {
+			console.log(e.dataTransfer);
 		}
-		fn.prototype = {
-			constructor: fn,
-			getData: function () {
-				return '个体'
-			}
-		}
-		console.log(fn.prototype.constructor === fn);
+		// document.body.addEventListener('wheel',function (e) {
+		// 	console.log(e);
+		// });
+		// document.body.addEventListener('keydown',function () {
+		// 	console.log('keydown');
+		// });
+		// document.body.addEventListener('keyup',function () {
+		// 	console.log('keyup');
+		// });
+		// document.body.addEventListener('keypress',function () {
+		// 	console.log('keypress');
+		// });
+		// document.body.addEventListener('mousewheel',function () {
+		// 	console.log('mousewheel');
+		// });
+		// shiyan1.onmouseenter = function (e) {
+		// 	console.log('onmouseenter1');
+		// }
+		// shiyan2.onmouseenter = function (e) {
+		// 	console.log('onmouseenter2');
+		// }
+		// shiyan1.onmouseleave = function (e) {
+		// 	console.log('onmouseleave1');
+		// }
+		// shiyan2.onmouseleave = function (e) {
+		// 	console.log('onmouseleave2');
+		// }
+		// shiyan1.onmouseover = function (e) {
+		// 	console.log('onmouseover1');
+		// 	// console.log(e.relatedTarget);
+		// }
+		// shiyan2.onmouseover = function (e) {
+		// 	console.log('onmouseover2');
+		// 	// console.log(e.relatedTarget);
+		// }
+		// shiyan1.onmouseout = function (e) {
+		// 	console.log('onmouseout1');
+		// 	// console.log(e.relatedTarget);
+		// }
+		// shiyan2.onmouseout = function (e) {
+		// 	console.log('onmouseout2');
+		// 	// console.log(e.relatedTarget);
+		// }
+		// shiyan.onclick = function () {
+		// 	console.log('单击');
+		// }
+		// shiyan.addEventListener('dblclick',function () {
+		// 	console.log('双击');
+		// })
+		// shiyan.addEventListener('contextmenu',function (e) {
+		// 	console.log('右键4');
+		// })
+		// document.addEventListener('contextmenu',function (e) {
+			// e.stopPropagation();
+			// e.preventDefault()
+			// console.log('右键1');
+		// })
+		// document.body.addEventListener('contextmenu',function (e) {
+			// e.stopPropagation();
+			// e.preventDefault()
+			// console.log('右键');
+		// })
+		// shiyan.ondblclick = function () {
+		// 	console.log('双击');
+		// }
+		// shiyan.oncontextmenu = function () {
+		// 	console.log('右键');
+		// }
+		// window.onresize = function () {
+		// 	console.log('resize');
+		// }
+		// window.onscroll = function () {
+		// 	console.log('scroll');
+		// }
+		// window.onload = function () {
+		// 	console.log('onload');
+		// }
+		// window.onfocus = function () {
+		// 	console.log('focus');
+		// }
+		// window.onblur = function () {
+		// 	console.log('blur');
+		// }
+		// window.onbeforeunload = function () {
+		// 	alert('unload');
+		// }
+		// document.addEventListener('DOMContentLoaded',function () {
+		// 	console.log('onDOMContentLoaded');
+		// })
+		// document.addEventListener('readystatechange',function () {
+		// 	console.log('readystatechange');
+		// })
+		// var zzaa = document.getElementById('zzaa');
+		// zzaa.ontextinput = function (e) {
+			// console.log(e);
+		// }
+		// var sub = document.getElementById('sub');
+		// sub.onclick = function (e) {
+		// 	console.log(e.target === sub);
+		// }
+		// console.log(window);
+		// var stylee = document.createElement('style');
+		// document.head.appendChild(stylee);
+		// var styleSheett = document.styleSheets[document.styleSheets.length-1];
+		// styleSheett.insertRule('p {color:red;}',0);
+		// document.styleSheets[1].insertRule('p {color:red;}',0);
+		// document.styleSheets[1].addRule('a','color:red;',2);
+		// document.styleSheets[1].removeRule(2);
+		// console.log(document.styleSheets[1].cssText);
+		// var linkk = document.getElementById('linkk');
+		// console.log(document.styleSheets);
+		// var haoh = document.getElementById('haoh');
+		// haoh.classList.toggle('wangwu');
+		// console.log(haoh.className);
+		// console.log(window.getComputedStyle(haoh,null).backgroundColor);
+		// console.log(haoh.currentStyle);
+		// haoh.style.cssText = 'color:red;';
+		// console.log(haoh.style.cssText);
+		// console.log(haoh.style.left);
+		// document.designMode = 'on';
+		// document.execCommand('bold');
+		// console.log(document.queryCommandSupport('bold'))
+		// var tijiao = document.getElementById('tijiao');
+		// var zzaa = document.getElementById('zzaa');
+		// tijiao.onclick = function () {
+			// console.log(zzaa.value.substring(zzaa.selectionStart,zzaa.selectionEnd));
+			// console.log(window.getSelection().toString());
+		// }
+		// var formm = document.getElementById('formm');
+		// formm.onclick = function () {
+			// document.write('我是write');
+		// }
+		// console.log(document.title);
+		// var formm = document.getElementById('formm');
+		// console.log(document.address.fff === formm);
+		// var sell = document.getElementById('sell');
+		// sell.onchange = function () {
+			// sell.options.length = 4;
+			// console.log(sell.options[sell.selectedIndex] = null);
+		// }
+		// var formm = document.getElementById('formm');
+		// var ff = document.forms.fff;
+		// console.log(formm === ff);
+		// var sub = document.getElementById('sub');
+		// formm.onsubmit = function () {
+		// 	console.log('jj');
+		// 	// return false;
+		// }
+		// sub.onclick = function () {
+		// 	formm.submit();
+		// }
+		// var tijiao = document.getElementById('tijiao');
+		// tijiao.onclick = function () {
+		// 	console.log(this.form === ff);
+		// 	return false;
+		// }
+		// var raa = document.getElementById('raa');
+		// raa.onchange = function () {
+		// 	console.log('klkl');
+		// }
+		// var lab = document.getElementById('ll');
+		// lab.scrollTop = 40;
+		// document.querySelector('.jk').onclick = function () {
+			// console.log(lab.offsetParent);
+			// console.log('lab.offsetWidth:'+lab.offsetWidth);
+			// console.log('lab.offsetHeight:'+lab.offsetHeight);
+			// console.log('lab.offsetLeft:'+lab.offsetLeft);
+			// console.log('lab.offsetTop:'+lab.offsetTop);
+			// document.querySelector('.dip').scrollTop = 30;
+			// console.log('lab.offsetTop:'+lab.offsetTop);
+			// console.log('lab.scrollTop:'+document.querySelector('.dip').scrollTop);
+			// console.log('lab.scrollHeight:'+document.querySelector('.dip').scrollHeight);
+			// console.log('lab.clientHeight:'+document.querySelector('.dip').clientHeight);
+			// window.scrollTo(0,100);
+		// }
+		// window.location.hash = "#ll";
+		// window.scrollTo(0,100);
+		// var lab = document.getElementById('ll');
+		// lab.scrollIntoView();
+		// setInterval(function () {
+		// 	window.scrollTo(0,10);
+		// },1000)
+		// window.scrollTo(0,500);
+		// console.log(document.elementFromPoint(100,300));
+		// var lab = document.getElementById('ll');
+		// var ss = lab.getClientRects();
+		// console.log(ss);
+		// document.querySelector('.jk').onclick = function () {
+		// 	console.log('window.pageYOffset:'+ window.pageYOffset);
+		// 	console.log('document.documentElement.scrollTop:'+ document.documentElement.scrollTop);
+		// 	console.log('window.innerHeight:'+ window.innerHeight);
+		// 	console.log('document.body.clientHeight:'+ document.body.clientHeight);
+		// }
+		// var lab = document.getElementById('ppp');
+		// var obj = lab.getBoundingClientRect();
+		// console.log(obj);
+		// console.log(lab.clientWidth);
+		// for (var c = root.firstChild;c!=null;c=c.nextSibling) {
+
+		// }
+		// console.log(document.querySelectorAll('a,label'));
+		// var jk = document.getElementById('jkjk');
+		// var sp = document.getElementById('spanid');
+		// sp.appendChild(jk);
+		// var frag = document.createDocumentFragment();
+		// var o = {     
+    		// value:9,     
+    		// get b() {return this.value;},     
+    		// set setter(x) {this.value = x;}     
+		// } 
+		// o.__defineGetter__('bb',function () {return this.value;});
+		// o.setter = 'jkjk';
+		// console.log(o.bb);
+		// Date.prototype.__defineGetter__('year', function() {return this.getFullYear();});     
+// Date.prototype.__defineSetter__('year', function(y) {this.setFullYear(y)});     
+
+// var now = new Date;     
+// alert(now.year);     
+// now.year = 2006;     
+// alert(now); 
+		// var ss = document.getElementById('lab').cloneNode(true);
+		// document.body.appendChild(ss);
+		// console.log(document.getElementById('lab').cloneNode(true));
+		// var aa = document.createElement('a');
+		// document.getElementById('spanid').appendChild(aa);
+		// console.log(document.getElementById('lab').childNodes[6].data);
+		// console.log(document.getElementById('lab').childNodes[6].nodeValue);
+		// console.log(document.getElementById('sss').text);
+		// console.log(document.getElementById('lab').textContent);
+		// console.log(document.getElementById('lab').outerHTML);
+		// console.log(document.getElementById('lab').innerHTML);
+		// console.log(document.getElementById('lab').attributes['for']);
+		// console.log(document.getElementById('lab').dataset);
+		// console.log(document.getElementById('lab').style.fontSize = '23px');
+		// console.log(document.getElementById('lab').htmlFor);
+		// console.log(document.getElementById('spanid').children);
+		// console.log(document.getElementById('spanid').childNodes);
+		// console.log($('a')[0] === document.querySelectorAll('a')[0]);
+		// console.log(document.getElementById('spanid').querySelectorAll('a'));
+		// var aa = document.createElement('a');
+		// document.getElementById('spanid').appendChild(aa);
+		// console.log(document.querySelectorAll('.aaa'));
+		// console.log(document.documentElement === document.getElementsByTagName('html')[0]);
+		// console.log(document.head);
+		// console.log(document.body);
+		// console.log(document.anchors);
+		// console.log(document.scripts);
+		// console.log(document.links);
+		// console.log(document.getElementsByTagName('body')[0].getElementsByTagName('*'));
+		// console.log(document.ifr === window.ifr);
+		// console.log(window);
+		// var ifr = document.getElementById('ifr');
+		// var childFrame = ifr.contentWindow;
+		// console.log(childFrame.frameElement);
+		// var w = window.open('index1.html','zhangsan');
+		// w.alert('jkjk');
+		// window.close();
+		// window.name = 'fu';
+		// console.log(w.ss);
+		// window.onerror = function (msg,url,line) {
+		// 	console.log(msg);
+		// 	console.log(url);
+		// 	console.log(line);
+		// 	return true;
+		// }
+		// document.location.href = 'http://www.baidu.com';
+		// var w = window.open('http://www.baidu.com','zhangsan','width=300,height=200',false);
+		// console.log(w);
+		// var w = window.open('http://www.baidu.com','zhangsan',true);
+		// w.alert('jkjk');
+		// console.log(window.spanid);
+		// var spanid = 90;
+		// alert('alert');
+		// confirm('confirm');
+		// prompt('prompt');
+		// showModalDialog('index1.html');
+		// alert('opo');
+		// console.log(screen);
+		// console.log(navigator);
+		// console.log(history);
+		// document.location.search = '?page=1';
+		// document.location.href = '#erer';
+		// document.location.href = 'http://www.baidu.com';
+		// document.location.replace('http://www.baidu.com');
+		// document.location.assign('http://www.baidu.com');
+		// console.log(document.location);
+		// window.location = window.location + '?zhangsan="jjjj"';
+		// console.log(window.location.search);
+		// console.log(document.URL);
+		// console.log(ss);
+		// console.log(document.domain);
+		// console.log(navigator);
+		// console.log(document.compatMode);
+		// window.onload = function () {
+		// 	console.log(document.readyState);
+		// }
+		// setTimeout(function () {console.log('90');},0);
+		// document.addEventListener("DOMContentLoaded", function() {
+  //  			console.log('jkjkjk');
+ 	// 	});
+		// var ss = document.getElementById('spanid');
+		// ss.onclick = fn;
+		// console.log(document.readyState);
+		// function fn () {
+		// 	var head = document.getElementsByTagName('head')[0];
+		// 	var s = document.createElement('script');
+		// 	s.src = '../js/js1.js';
+		// 	head.appendChild(s);
+		// }
+		// fn();
+		// var aa = document.getElementById('aa');
+		// aa.className = 'wangwu';
+		// console.log(aa);
+		// setTimeout(function () {
+		// 	window.location = 'http://www.baidu.com'
+		// },2000)
+		// function fn1 () {
+		// 	throw new Error('1');
+		// }
+		// function fn2 () {
+		// 	throw new Error('2');
+		// }
+		// function fn3 () {
+		// 	throw new Error('3');
+		// }
+		// try{
+			// fn2()
+			// setTimeout(function () {
+			// 	fn1()
+			// },2000)
+		// }catch(e if e === '2'){
+			// console.log(e);
+		// }
+		// var fn = function (x) x+1
+		// console.log(fn(2));
+		// let a = [1,2,3,4];
+		// let arr = [x*x for (x in a)];
+		// console.log(arr);
+		// function fn () {
+		// 	return 33;
+		// }
+		// console.log(fn());
+		// console.log(Iterator({a: 1,b: 2}));
+		// try {
+		// 	throw new Error('语法错误');
+		// } catch (e) {
+		// 	// throw e;
+		// 	console.log(e);
+		// 	// throw new Error('hao aaaaaa');
+		// }
+		// for (var i=0;i<3;i++) {
+		// 	console.log(i);
+		// }
+		// console.log(window);// StopIteration
+		// var obj = {
+		// 	a: 'aa',
+		// 	b: 'bb',
+		// 	c: 'cc',
+		// 	d: 'dd'
+		// }
+		// for each(let v in obj) {
+		// 	console.log(v);
+		// }
+		// console.log(undefined + 9);
+		// let ss =10;
+		// for (let i=0;i<4;i++) {
+			// let ss = 9;
+			// console.log(ss);
+		// }
+		// let j =3;
+		// for (let i=0;i<6;i++) {
+		// 	console.log(i+j);
+		// }
+		// {
+		// 	let j = j + 1;
+		// 	console.log(s);
+		// }
+		// console.log(i);
+		// var ss = 90;
+		// var ss = 9009;
+		// const ss = 98;
+		// const ss = 909;
+		// ss = 99;
+		// console.log(ss);
+		// function fn (name,age) {
+		// 	this.name = name;
+		// 	this.age = age;
+		// }
+		// var s1 = new fn('zhangsan',12);
+		// var s2 = new fn('zhangsan',12);
+		// console.log(s1 == s2);
+		// var obj = {
+		// 	a: 'b',
+		// 	a: 'jj',
+		// 	a: 'jk'
+		// }
+		// console.log(obj.a);
+		// console.log(Array.prototype);
+		// function fn () {}
+		// var ss = new fn();
+		// console.log(ss.constructor);
+		// var fn ={
+		// 	a: '3'
+		// }
+		// console.log(fn.toString());
+		// var ss = 'rrr';
+		// console.log(ss.constructor);
+		// HTMLElement.prototype.zhangsan = function () {
+		// 	console.log('zhangsan 来了');
+		// }
+		// var aa = document.getElementById('aa');
+		// aa.zhangsan();
+		// Array.prototype.zhangsan = function () {
+		// 	console.log('所有数组都有zhangsan方法');
+		// }
+		// var arr = [1,2,3,4,5];
+		// arr.zhangsan();
+		// function fn () {
+		// 	this.name = 'zhangsan';
+		// 	this.age = 24;
+		// }
+		// fn.prototype = {
+		// 	constructor: fn,
+		// 	getData: function () {
+		// 		return '个体'
+		// 	}
+		// }
+		// console.log(fn.prototype.constructor === fn);
 		// var fu = {
 		// 	fu: 'fu'
 		// };
@@ -592,6 +1156,13 @@
 		// var ss = Point(3,5);
 		// Point(3,5);
 		// console.log(ss);
+		// window.onload = function () {
+		// 	console.log(document.readyState);
+		// }
+		// for (var i=0;i<10;i++) {
+		// 	console.log(i);
+		// }
+		
 	</script>
 </body>
 </html>
