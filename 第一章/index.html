@@ -134,14 +134,14 @@
 			dfdf点击fdfdf
 		</p>
 	</div> -->
-	<input type="text" name="text4" form="formm"><br>
-	<form action="" id="formm" name="fff">
+	<!-- <input type="text" name="text4" form="formm"><br>
+	<form action="" id="formm" name="fff"> -->
 		<!-- <input type="hidden">
 		<input type="checkbox">
 		<input type="radio"> -->
-		<input type="text" name="text1" required id="zzaa"><br>
-		<input type="text" name="text2"><br>
-		<input type="text" name="text3"><br>
+		<!-- <input type="text" name="text1" required id="zzaa"><br>
+		<input type="text" name="text2" required><br>
+		<input type="text" name="text3" required><br>
 		<input type="radio" name="ra">
 		<input type="radio" name="ra" id="raa">
 		<input type="radio" name="ra">
@@ -157,35 +157,205 @@
 			<option value="55">55</option>
 			<option value="66">66</option>
 		</select>
-		<input type="submit"  id="tijiao">
+		<input type="submit"  id="tijiao"> -->
 		<!-- <button type="submit">提交</button> -->
 		<!-- <input type="reset"> -->
 		<!-- <button type="reset">重置</button> -->
-	</form>
-	<p id="sub">提交</p>
+	<!-- </form> -->
+	<!-- <p id="sub">提交</p>
 	<p style="width:100px;display:inline-block;height:40px;border:1px solid red;">zjkjkf</p>
-	<p style="position:relative;left:20px;width:100px;display:inline-block;height:40px;border:1px solid red;">jkjkjkjkjkj</p>
+	<p style="position:relative;left:20px;width:100px;display:inline-block;height:40px;border:1px solid red;">jkjkjkjkjkj</p> -->
 	<!-- <p style="width:100px;display:inline-block;height:40px;border:1px solid red;">提提交提交交</p> -->
 	<!-- <div class="zhangsan lisi" id="haoh"  style="padding:10px;border:5px solid red;height:100px;width:100px;left:10%;margin:10px 2px 5px 9px;background-color:#333;">
 		<p style="clip:rect(5px 20px 20px 0px);position:absolute;left:0;top:0;background-color:#abcdef;">9fdfdsfdsfsdfdsfdsfdsfdsfdsfdsfdsfdsfdsf9999</p>
 	</div> -->
-	<a href="http://www.baidu.com">百度</a>
+	<!-- <a href="http://www.baidu.com">百度</a>
 	<div id="shiyan1" style="width:200px;height:150px;line-height:50px;text-align:center;border:1px solid red;">
 	实验按钮1
 	<p id="shiyan2" style="width:100px;height:50px;line-height:50px;text-align:center;border:1px solid red;">实验按钮2</p>
-	</div>
+	</div> -->
 	<!-- <p id="shiyan2" style="margin-top:0px;width:100px;height:50px;line-height:50px;text-align:center;border:1px solid red;">实验按钮2</p> -->
+	<style>
+		/* ul {
+			overflow:hidden;
+		}
+		li{
+			width: 30px;
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			margin:10px;
+			border:1px solid red;
+			float:left;
+			list-style: none;
+		} */
+	</style>
+
+	<!-- <ul id="ulid">
+		<li id="liid">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul> -->
+	<style>
+		/* .div1{
+			width: 200px;
+			height:200px;
+			border: 1px solid red;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			position:absolute;
+			left:0;
+			top: 0;
+			background-color:#fff;
+		}
+		.div2{
+			width: 100px;
+			height:100px;
+			border: 1px solid red;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			overflow:auto;
+		}
+		.div3{
+			width: 50px;
+			height:350px;
+			border: 1px solid red;
+		} */
+	</style>
+	<!-- <div class="div1">11
+		<div class="div2">22
+			<div class="div3">
+				33
+			</div>
+		</div>
+	</div> -->
+	<style>
+		/* .mubiao{
+			width:200px;
+			height:200px;
+			border:1px solid red;
+		}
+		.yuan{
+			width:50px;
+			height:50px;
+			background-color:red;
+			cursor:pointer;
+		} */
+	</style>
+	<!-- <div class="mubiao">
+		目标
+	</div>
+	<div class="yuan">
+		源
+	</div> -->
+	<div>
+		<input id="inputid" type="text">
+		只可输入数字
+	</div>
 	<script src="../js/jquery.min.js"></script>
-	<script id="sss" type="text/x-custom-data">
+	<!-- <script id="sss" type="text/x-custom-data">
 		console.log('dfdfdf');
-	</script>
+	</script> -->
 	<script type="text/javascript">
 		"use strict";
-		var shiyan1 = document.getElementById('shiyan1');
-		var shiyan2 = document.getElementById('shiyan2');
-		shiyan2.onclick = function (e) {
-			console.log(e.dataTransfer);
+		var inp = document.querySelector('#inputid');
+		// inp.onkeydown = function () {
+		// 	console.log('keydown');
+		// }
+		// inp.onkeyup = function () {
+		// 	console.log('keyup');
+		// }
+		inp.onkeypress = function (e) {
+			var s = parseInt(e.keyCode);
+			if (!(s>=48 && s<=57)) {
+				e.preventDefault();
+			}
 		}
+		// inp.addEventListener('textInput',function (e) {
+		// 	console.log(e.data);
+		// });
+		// inp.addEventListener('input',function (e) {
+		// 	console.log(e.target.value);
+		// });
+		// inp.oninput = function () {
+		// 	console.log('textInput');
+		// }
+		// var div1 = document.querySelector('.div1');
+		// document.addEventListener('wheel',function (e) {
+			// e.preventDefault();
+			// console.log('e');
+		// });
+		// $('.div2')[0].addEventListener('wheel',function () {
+		// 	console.log('2');
+		// });
+		// div1.onmousedown = function (event) {
+		// 	drag(this,event);
+		// }
+		// function drag (dom,event) {
+			// console.log('11');
+			// document.addEventListener('mousemove',function (event) {
+				// console.log('x:'+event.clientX);
+				// console.log('y:'+event.clientY);
+				// console.log(div1.style.left);
+				// div1.style.left = event.clientX + 'px';
+				// div1.style.top = event.clientY + 'px';
+			// },true);
+		// }
+		// $('.div1')[0].addEventListener('mousedown',function () {
+		// 	console.log('1');
+		// });
+		// document.addEventListener('DOMContentLoaded',function () {
+		// 	console.log('DOMContentLoaded');
+		// });
+		// document.removeEventListener('DOMContentLoaded',function () {
+		// 	console.log('removeDOMContentLoaded');
+		// });
+		// window.onload = function () {
+		// 	console.log('load');
+		// }
+		// document.addEventListener('DOMContentLoaded',function () {
+		// 	console.log('DOMContentLoaded');
+		// });
+		// document.addEventListener('readystatechange',function () {
+		// 	console.log('readystatechange');
+		// });
+		// $('.div1')[0].addEventListener('click',function () {
+		// 	console.log('1');
+		// },true);
+		// $('.div1')[0].removeEventListener('click',function () {
+			// console.log('1');
+		// });
+		// $('.div2')[0].addEventListener('click',function () {
+		// 	console.log('2');
+		// },true);
+		// $('.div3')[0].addEventListener('click',function () {
+		// 	console.log('3');
+		// },true);
+		// var ulid = document.getElementById('ulid');
+		// $('#ulid').on('click','#liid',function () {
+			// console.log('liid');
+		// })
+		// var shiyan1 = document.getElementById('shiyan1');
+		// var shiyan2 = document.getElementById('shiyan2');
+		// var zzaa = document.getElementById('zzaa');
+		// var formm = document.getElementById('formm');
+		// zzaa.addEventListener('invalid',function () {
+		// 	console.log('invalid');
+		// });
+		// formm.addEventListener('invalid',function (e) {
+			// console.log(e);
+			// console.log('formminvalid');
+			// e.preventDefault();
+		// },true);
+		// window.addEventListener('hashchange',function () {
+		// 	console.log('hashchange');
+		// });
+		// shiyan2.onclick = function (e) {
+		// 	document.location.hash = '#' + Date.now();
+		// }
 		// document.body.addEventListener('wheel',function (e) {
 		// 	console.log(e);
 		// });
