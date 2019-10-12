@@ -251,29 +251,245 @@
 	<div class="yuan">
 		源
 	</div> -->
-	<div>
+	<!-- <div>
 		<input id="inputid" type="text">
 		只可输入数字
-	</div>
+	</div> -->
+	<!-- <span>jkjkj</span><span>kkk</span>
+	<iframe style="position:absolute;top:50px;" src="index1.html" frameborder="1">frfrfr</iframe> -->
+	
+ <!-- 绝对定位的流体特性 -->
+<!-- <div style="position:relative;height: 100px;background: yellow;margin: 20px;">
+	<div style="position: absolute;background: #f34413;left: 0;right: 0">我是水平流</div>
+</div>
+<div style="position:relative;height: 100px;background: yellow;margin: 20px;">
+	<div style="margin:0 auto;position: absolute;background: #f34413;top: 0;bottom: 0">垂直流</div>
+</div>
+<div style="position:relative;height: 100px;background: yellow;margin: 20px;">
+	<div style="position: absolute;background: #f34413;left: 10px;right:10px;top: 10px;bottom: 10px">
+	我是水平垂直流</div>
+</div> -->
+<!-- <div style="position:absolute;left:0;right:0;top:0;bottom:0;width:80%;height:20%;margin:auto;background-color:red;">jjj</div> -->
+<!--  <div class="father">
+ 	<div class="son"></div>
+ </div> -->
+ <style type="text/css">
+ 	/* .father{
+ 		width: 400px;
+ 		height: 400px;
+ 		background: yellow;
+ 		position: relative;
+ 	}
+ 	.son{
+ 		width: 200px;
+ 		height: 100px;
+ 		background: green;
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		margin: auto;
+ 	} */
+ </style>
+ 	<!-- <form action="">
+ 		<input type="text" name='text1'>
+ 		<input type="file" name="file1" id="filee" multiple="multiple">
+ 		<input type="submit">
+ 	</form>
+ 	<div id="zhongzhi">中止</div> -->
+ 	<!-- <div> -->
+ 		<!-- <a href="http://zjw.shanxiangjiaoyu.com/api/county?project_id=26&county_id=11" id="baidu">百度</a><br> -->
+ 		<!-- <a href="http://www.zhaojiao.net">中国招教网</a> -->
+ 	<!-- </div> -->
+ 	<!-- <img src="../img/InsertCardOrPassbook.gif" alt="" style="width:600px;height:300px;"> -->
+ 	<!-- <div id="jq">张三</div> --> 
+ 	<style>
+       /* img{
+       	width: 100px;
+       	height: 100px;
+       } */
+ 	</style>
+ 	<!-- <div>
+ 		<img id="imgid" alt="">
+ 	</div> -->
+ 	<div>
+ 		<p class="pp">1</p>
+ 		<p class="pp">2</p>
+ 		<p class="pp">3</p>
+ 		<p class="pp">4</p>
+ 	</div>
 	<script src="../js/jquery.min.js"></script>
+	<!-- <script src="../js/md5.js"></script> -->
 	<!-- <script id="sss" type="text/x-custom-data">
 		console.log('dfdfdf');
 	</script> -->
 	<script type="text/javascript">
 		"use strict";
-		var inp = document.querySelector('#inputid');
+		// $('.pp').extend({name: 'zhangsan'});
+		// console.log($('.pp').name)
+		console.log($.prototype);
+		// jQuery.extend({min: '9090'});
+		// console.log(jQuery.min);
+		// console.log($('.pp').css('color','red').__proto__ === $('.pp').__proto__);
+		// var i = 1;
+		// function getf () {
+		// 	i = 2;
+		// 	console.log(i);
+		// }
+		// function getf () {
+		// 	i = 3;
+		// 	console.log(i);
+		// }
+		// getf();
+		// console.log(i);
+		// var img = document.getElementById('imgid');
+		// var i = 1;
+		// setInterval(function () {
+		// 	img.src = '../img/'+i+'.png';
+		// 	if (i == 14) {
+		// 		i = 0;
+		// 	}
+		// 	i++;
+		// },100);
+		// document.addEventListener('DOMContentLoaded',function () {
+		// 	console.log('DOMContentLoaded');
+		// 	console.log(document.querySelectorAll('img'));
+		// });
+		// $.fn.extend({
+		// 	init: function () {console.log(90);}
+		// });
+		// console.log($('#jq').__proto__);
+		
+		// var settings = { validate: false, limit: 5, name: "foo" }; 
+		// var options = { validate: true, name: "bar" }; 
+		// jQuery.extend({
+		// 	init: function () {return 9}
+		// }); 
+		// console.log(jQuery.init());
+		// console.log($.prototype);
+		// var ticker = new EventSource('http://zjw.shanxiangjiaoyu.com/api/county?project_id=26&county_id=11');
+		// ticker.addEventListener('message',function (e) {
+		// 	console.log(e);
+		// });
+		// function callbackfn (data) {
+		// 	console.log(data);
+		// }
+		// $.ajax({
+		// 	url: 'http://zjw.shanxiangjiaoyu.com/api/county?project_id=26&county_id=11',
+		// 	type: 'JSONP',
+		// 	jsonpcallback: 'callbackfn',
+		// 	beforesend: function () {
+		// 		console.log('请求前触发');
+		// 	}
+		// })
+		// var obj = {
+		// 	name: 'zhangsan'
+		// }
+		// obj.age = 'jjj';
+		// var age1 = 'age';
+		// var ss = 'obj.' + age1;
+		// console.log(ss);
+		// var baidu = document.getElementById('baidu');
+		// baidu.onmouseover = function (e) {
+		// 	var xhr = new XMLHttpRequest();
+		// 	var url = e.target.href;
+		// 	xhr.open('GET',url);
+		// 	xhr.send(null);
+		// 	xhr.onreadystatechange = function () {
+		// 		if (xhr.readyState == 4) {
+		// 			if (xhr.status == 200) {
+		// 				var type = xhr.getResponseHeader('Content-Type');
+		// 				var date = xhr.getResponseHeader('Last-Modified');
+		// 				console.log(type+date);
+		// 			}
+		// 		}
+		// 	}
+		// 	baidu.onmouseover = null;
+		// }
+		// baidu.title = '百度';
+		// console.log(baidu.protocol);
+		// console.log(location.protocol);
+		// document.cookie = "username=John Doe; expires=Sun, 31 Dec 2017 12:00:00 UTC";
+		// console.log(document.cookie);
+		// var filee = document.getElementById('filee');
+		// var fd = new FormData();
+		// filee.onchange = function () {
+		// 	for (var name in this.files) {
+		// 		fd.append(name,this.files[name]);
+		// 	}
+		// }
+		// console.log(fd);
+		// eval('(' + MsgData + ')')
+		// var url = 'http://zjw.shanxiangjiaoyu.com/api/county?project_id=26&county_id=11';
+		// var xhr = new XMLHttpRequest();
+		// var zhongzhi = document.getElementById('zhongzhi');
+		// zhongzhi.onclick = function () {
+		// 	xhr.abort();
+		// }
+		// console.log(xhr.withCredentials);
+		// xhr.open('get',url,true);
+		// xhr.send();
+		// xhr.addEventListener('loadstart',function () {
+		// 	console.log('loadstart');
+		// });
+		// xhr.addEventListener('progress',function (e) {
+		// 	console.log('progress');
+		// 	console.log('e.loaded:'+e.loaded);
+		// 	console.log('e.total:'+e.total);
+		// });
+		// xhr.addEventListener('load',function (e) {
+		// 	console.log('load');
+		// 	console.log(xhr.responseText);
+		// });
+		// xhr.addEventListener('abort',function () {
+		// 	console.log('abort');
+		// });
+		// xhr.onreadystatechange = function () {
+		// 	if (xhr.readyState == 4) {
+		// 		if (xhr.status == 200) {
+		// 			// console.log(xhr);
+		// 			console.log('成功');
+		// 			// console.log(xhr.getAllResponseHeaders());
+		// 			// console.log(xhr.getResponseHeader('Content-Type'));
+		// 			// console.log(xhr.responseText);
+		// 			// console.log(xhr.responseXML);
+		// 		}
+		// 	}
+		// }
+		// console.log('jkjkkjk');
+		// var parmas = {
+		// 	"find": "pizza",
+		// 	"zipcode":"0231",
+		// 	"radius": "1km"
+		// }
+		// console.log(parmas.find);
+		// console.log(JSON.parse(JSON.stringify(parmas)));
+
+		// var url = 'http://zjw.shanxiangjiaoyu.com/api/county';
+		// var xhr = new XMLHttpRequest();
+		// xhr.open('post',url,true);
+		// xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		// xhr.send('project_id=26&county_id=11');
+		// xhr.onreadystatechange = function () {
+		// 	if (xhr.readyState == 4) {
+		// 		if (xhr.status == 200) {
+		// 			console.log(xhr.responseText);
+		// 		}
+		// 	}
+		// }
+		// var inp = document.querySelector('#inputid');
 		// inp.onkeydown = function () {
 		// 	console.log('keydown');
 		// }
 		// inp.onkeyup = function () {
 		// 	console.log('keyup');
 		// }
-		inp.onkeypress = function (e) {
-			var s = parseInt(e.keyCode);
-			if (!(s>=48 && s<=57)) {
-				e.preventDefault();
-			}
-		}
+		// inp.onkeypress = function (e) {
+			// console.log(e.key);
+			// var s = parseInt(e.keyCode);
+			// if (!(s>=48 && s<=57)) {
+			// 	e.preventDefault();
+			// }
+		// }
 		// inp.addEventListener('textInput',function (e) {
 		// 	console.log(e.data);
 		// });
