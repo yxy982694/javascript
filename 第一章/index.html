@@ -274,6 +274,10 @@
  	<div class="son"></div>
  </div> -->
  <style type="text/css">
+ 	*{
+ 		padding:0;
+ 		margin:0;
+ 	}
  	/* .father{
  		width: 400px;
  		height: 400px;
@@ -311,12 +315,27 @@
  	<!-- <div>
  		<img id="imgid" alt="">
  	</div> -->
- 	<div>
- 		<p class="pp">1</p>
- 		<p class="pp">2</p>
+ 	<style>
+       .pp{
+       	  font-size: 23px;
+       	  /* margin:9px; */
+       }
+       .pp2{
+       	width:100px;
+       	height:100px;
+       	background-color:#f00;
+       	border:2px solid green;
+       	padding:10px;
+       }
+ 	</style>
+ 	<div id="haha" style="position:relative;top:50px;width:200px;left:50px;border:1px solid red;">
+ 		<p class="pp" style="color:red">1</p>
+ 		<p class="pp" style="">2</p>
  		<p class="pp">3</p>
- 		<p class="pp">4</p>
+ 		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
+ 		<h1>h1</h1>
  	</div>
+ 	<div class="ll"></div>
 	<script src="../js/jquery.min.js"></script>
 	<!-- <script src="../js/md5.js"></script> -->
 	<!-- <script id="sss" type="text/x-custom-data">
@@ -324,12 +343,138 @@
 	</script> -->
 	<script type="text/javascript">
 		"use strict";
+
+		// $('.pp2').data('val','op');
+		// $('.pp2').removeData('val');
+		// $.data('.pp2',{val: 'oio'})
+		// $('.pp2').data('valff','op');
+		// console.log($('.pp2').data());
+		// $('.pp2').data({val: 'jkk'})
+		// console.log($('.pp2').data('val'));
+		// $(window).scrollTop(200);
+		// console.log($(window).scrollTop());
+		// console.log(typeof $('.pp2').width())
+		// console.log($(window).width());
+		// console.log( $('#haha').offset());
+		// console.log($('.pp2').offsetParent());
+		// var weizhi = $('.pp3').position();
+		// console.log(weizhi);
+		// console.log($('.pp').text());
+		// console.log($('input').val('jkjk'));
+		// $('input').val('woshi zhangsan');
+		// console.log($('.pp').removeClass('pp2 pp1'));
+		// console.log($('.pp').is('.pp2.pp1'));
+		// console.log($('.pp').hasClass('pp2'));
+		// $('.pp').toggleClass('pp1 pp2',true);
+		// $('.pp').toggleClass('pp1 pp2',false);
+		// $('h1').addClass('h11 h22');
+		// $('.pp').addClass(function (n) {
+		// 	return 'selector' + n
+		// })
+		// console.log(typeof $('.pp')[3].className);
+		// console.log($('.pp')[0].style.fontSize);
+		// console.log($('.pp').css('background-color','yellow'));
+		// $('.pp').css({
+		// 	color: function () {
+		// 		return 'red'
+		// 	}
+		// });
+		// $('.pp').css('color',function (index,value) {
+		// 	if (index % 2 == 0) {
+		// 		$(this).css('color','red');
+		// 	} else {
+		// 		$(this).css('color','green');
+		// 	}
+		// });
+		// console.log($('.pp').css(function () {
+		// 	$(this).css('colr');
+		// });
+		// console.log($('p').is('.pp'));
+		// $('p').each(function (index) {
+		// 	if ($(this).is('.pp')) {
+		// 		console.log(index);
+		// 	}
+		// });
+		// console.log($('p').index('.pp'));
+		// var ss = $('.pp').map(function(index){
+		// 	if (index == 2) {
+		// 		return null;
+		// 	}
+		// })
+		// console.log(ss);
+		// console.log($('.pp').each(function (index,e) {
+		// 	console.log(index);
+		// 	console.log(e);
+		// 	if (index == 1) {
+		// 		return false;
+		// 	}
+		// }))
+		// console.log($('.pp').content);
+		// console.log($('.pp').selector)
+		// console.log($('.pp').toArray())
+		// console.log($('.pp').get(1))
+		// $(function (a) {
+		// 	console.log(a === $);
+		// })
+		// var ss = $('<div>45rt</div>',{css: {color: 'red'}});
+		// $('#haha').append(ss);
+		// var ss = $('<div><p>9999</p><p>9999</p><p>9999</p></div>',{id: 'zhangsan'});
+		// $('.ll').append($('#haha'));
+		// console.log($('<div><p>9999</p><p>9999</p><p>9999</p></div>'));
+		// var p0 = document.querySelectorAll('.pp')[0];
+		// var p1 = document.querySelectorAll('.pp')[1];
+		// var p2 = document.querySelectorAll('.pp')[2];
+		// var p3 = document.querySelectorAll('.pp')[3];
+		// var arr = [p0,p1,p2,p3];
+		// console.log($(arr));
+		// console.log($('.pp'));
+		// console.log($.prototype);
+		// $('.pp').click(function () {
+		// 	console.log($(this)[0] === this);
+		// })
+		// setTimeout(function () {
+		// 	console.log(window === this);
+		// },1000)
+		// for (var i=0;i<5;i++) {
+			
+		// }
+		// jQuery.prototype.extend({
+		// 	css: function (attr,value) {
+		// 		console.log(this);
+		// 		if (typeof attr === 'object'){
+		// 			for(let i in attr) {
+		// 				for (let j=0,len = this.length;j<len;j++){
+		// 					this[j].style[i] = attr[i];
+		// 				}
+		// 			}
+		// 		} else {
+		// 			if (typeof value === 'undefined') {
+		// 				return window.getComputedStyle?getComputedStyle(this[0])[attr]:this[0].currentStyle[attr];
+		// 			}
+		// 			for (let j=0,len = this.length;j<len;j++){
+		// 				this[j].style[attr] = value;
+		// 			}	
+		// 		}
+		// 		return this;
+		// 	}
+		// });
+		// console.log($('.pp'));
+		// console.log($('.pp').css('color','red'));
+		// function fn () {
+		// 	this.name = 'zhangsan';
+		// 	this.age = 23;
+		// 	return 23;
+		// }
+		// var f = new fn();
+		// console.log(f);
+		// console.log($('.pp') instanceof $.prototype.init);
 		// $('.pp').extend({name: 'zhangsan'});
 		// console.log($('.pp').name)
-		console.log($.prototype);
+		// console.log($.prototype);
 		// jQuery.extend({min: '9090'});
 		// console.log(jQuery.min);
-		// console.log($('.pp').css('color','red').__proto__ === $('.pp').__proto__);
+		// console.log($('.pp').css('color','red'));
+		// console.log($('.pp'));
 		// var i = 1;
 		// function getf () {
 		// 	i = 2;
