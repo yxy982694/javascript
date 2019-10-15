@@ -306,6 +306,7 @@
  	<!-- </div> -->
  	<!-- <img src="../img/InsertCardOrPassbook.gif" alt="" style="width:600px;height:300px;"> -->
  	<!-- <div id="jq">张三</div> --> 
+ 	<!-- <a href="###" onClick="console.log('a1');">a1</a> -->
  	<style>
        /* img{
        	width: 100px;
@@ -318,7 +319,6 @@
  	<style>
        .pp{
        	  font-size: 23px;
-       	  /* margin:9px; */
        }
        .pp2{
        	width:100px;
@@ -329,13 +329,17 @@
        }
  	</style>
  	<div id="haha" style="position:relative;top:50px;width:200px;left:50px;border:1px solid red;">
- 		<p class="pp" style="color:red">1</p>
+ 		<p class="pp pp3" style="color:red">1</p>
  		<p class="pp" style="">2</p>
  		<p class="pp">3</p>
  		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
- 		<h1>h1</h1>
+ 		<!-- <h1>h1</h1> -->
+ 		<!-- <a href="###" onClick="console.log('a2');"><div>3333</div>a2</a> -->
  	</div>
- 	<div class="ll"></div>
+ 	<!-- <div class="ll">
+ 		<p class="zhangsan">333</p>
+ 		<span>jkjk</span>
+ 	</div> -->
 	<script src="../js/jquery.min.js"></script>
 	<!-- <script src="../js/md5.js"></script> -->
 	<!-- <script id="sss" type="text/x-custom-data">
@@ -343,7 +347,52 @@
 	</script> -->
 	<script type="text/javascript">
 		"use strict";
-
+		$('.pp3').click(function () {
+			console.log('pp3');
+		});
+		$('.pp2').click(function (e) {
+			console.log('pp2');
+		})
+		$('.pp2').trigger('click');
+		// function fn1 () {console.log('fn1');}
+		// function fn2 () {console.log('fn2');}
+		// $('.pp2').bind('click',fn1)
+		// $('.pp2').bind('click',fn2)
+		// $('.pp2').unbind({
+		// 	click: fn1,
+		// 	mouseenter: fn2
+		// });
+		// $('.pp').bind('click mouseenter','zhangsan',function (e) {
+		// 	console.log(e.data);
+		// })
+		// $('.pp').click(function (e) {
+			// console.log(e.handler);
+			// return 'index'
+		// })
+		// $('.ll').toggle(function () {
+		// 	console.log('9090');
+		// },function () {
+		// 	console.log('lololo');
+		// })
+		// $('.ll').unwrap();
+		// $('.ll').on('click',function () {
+		// 	console.log('lll');
+		// })
+		// var clo = $('.ll').clone();
+		// $('.ll').detach();
+		// $('body').append(clo);
+		// $('p').filter('.zhangsan');
+		// $('a').wrapAll($('.ll'));
+		// $('.ll').append('<f><f>');
+		// $('a').wrap($('.ll'));
+		// console.log($('a').clone());
+		// $('.ll').append($('a').clone(true));
+		// $('.ll').append('.pp2');
+		// $('<h5>我是h5</h5>').appendTo('.ll')
+		// console.log($('.ll').appendTo('.pp2'));
+		// $('.ll').append(function (index,e) {
+		// 	return '<h2>我是h2</h2>'
+		// });
 		// $('.pp2').data('val','op');
 		// $('.pp2').removeData('val');
 		// $.data('.pp2',{val: 'oio'})
