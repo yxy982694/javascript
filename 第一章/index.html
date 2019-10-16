@@ -333,8 +333,6 @@
  		<p class="pp" style="">2</p>
  		<p class="pp">3</p>
  		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
- 		<!-- <h1>h1</h1> -->
- 		<!-- <a href="###" onClick="console.log('a2');"><div>3333</div>a2</a> -->
  	</div>
  	<!-- <div class="ll">
  		<p class="zhangsan">333</p>
@@ -345,15 +343,112 @@
 	<!-- <script id="sss" type="text/x-custom-data">
 		console.log('dfdfdf');
 	</script> -->
+	<!-- <form action="###">
+		<input class="inut" type="text" name="text1"><br>
+		<input type="text" name="text2"><br>
+		<input type="text" nameh="text3"><br>
+		<input type="submit">
+	</form> -->
 	<script type="text/javascript">
 		"use strict";
-		$('.pp3').click(function () {
-			console.log('pp3');
-		});
-		$('.pp2').click(function (e) {
-			console.log('pp2');
+		$('.pp2').fadeOut(200)
+		.delay(200)
+		.fadeIn(800)
+		.queue(function (next) {
+			$(this).html('hello world');
+			next();
 		})
-		$('.pp2').trigger('click');
+		.queue(function (next) {
+			$(this).html('hello world3434343');
+			next();
+		})
+		.animate({
+			borderWidth: '+=4'
+		},800);
+		// $('.pp2').fadeOut(2000).delay(2000).slideDown(1000)
+		// $('.pp2').bind({
+		// 	mouseenter: function () {$(this).stop(true).fadeTo(2000,.5).slideUp(800)}
+		// })
+		// $('.pp2').animate({width: ['+=200','linear'],height: ['+=20','swing']});
+		// $('.pp2').fadeIn(500)
+		// .animate({width: "hide"},{queue: false,duration: 1000,step: function () {console.log('jkjk')}})
+		// .fadeOut(500);
+		// $('.pp2').animate({width: '+=200',height: '+=20'},{
+		// 	specialEasing: {
+		// 		width: 'linear',
+		// 		height: 'swing'
+		// 	}
+		// });
+		// $('.pp2').slideUp();
+		// $('.pp2').animate({
+		// 	width: '+=500'
+		// },2000,'swing')
+		// jQuery.fx.speeds['zhangsan'] = 800;
+		// $('.pp2').fadeOut('zhangsan',function () {
+		// 	console.log('cel');
+		// })
+		// jQuery.fx.off = true;
+		// $('.pp2').bind('zhangsan',function () {
+		// 	console.log('zhangsan');
+		// });
+		// $('.pp2').trigger('zhangsan');
+		// $('#haha').click(function (e) {
+		// 	console.log('haha');
+		// 	e.stopPropagation();
+		// });
+		// $('p').bind('click',function () {
+		// 	console.log('静态的点击');
+		// });
+		// $(document).delegate('p','click', 'maopao', function (e) {
+		// 	console.log(e.data);
+		// })
+		// $('p').live('click',function () {
+		// 	console.log('live');
+		// });
+		// $('p').die('click');
+		// $(document).undelegate();
+		// var ps1 = document.createElement('p');
+		// var ps2 = document.createElement('p');
+		// var ps3 = document.createElement('p');
+		// var text1 = document.createTextNode('新增p1');
+		// var text2 = document.createTextNode('新增p2');
+		// var text3 = document.createTextNode('新增p3');
+		// ps1.appendChild(text1);
+		// ps2.appendChild(text2);
+		// ps3.appendChild(text3);
+		// $('#haha').append(ps1);
+		// $('#haha').append(ps2);
+		// $('#haha').append(ps3);
+		// $('form').submit(function () {
+		// 	console.log('jkjk');
+		// });
+		// $('form').triggerHandler('submit');
+		// $('.pp2').click(function (e) {
+		// 	console.log('pp2');
+		// })
+		// $('.pp3').click(function () {
+		// 	console.log('pp3');
+		// });
+		// document.querySelector('.pp2').onclick = function () {
+		// 	console.log('query pp2');
+		// }
+		// $.event.trigger('submit');
+		// $('*').trigger('click');
+		// $('.pp3').click(function () {
+		// 	console.log('pp3');
+		// });
+		// $('.pp2').mouseenter(function (e) {
+		// 	console.log('pp2 enter');
+		// })
+		// document.querySelector('.pp2').onclick = function () {
+		// 	console.log('query pp2');
+		// }
+		// document.querySelector('.pp2').addEventListener('click',function () {
+		// 	console.log('add pp2');
+		// })
+		// $('.pp2').trigger('click');
+		// console.log($('.pp2').click())
+		// console.log('kjkkjk');
 		// function fn1 () {console.log('fn1');}
 		// function fn2 () {console.log('fn2');}
 		// $('.pp2').bind('click',fn1)
