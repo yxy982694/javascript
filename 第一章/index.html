@@ -334,6 +334,10 @@
  		<p class="pp">3</p>
  		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
  	</div>
+ 	<div class="ll">
+ 		<p class="zhangsan">333</p>
+ 		<span>jkjk</span>
+ 	</div>
  	<!-- <div class="ll">
  		<p class="zhangsan">333</p>
  		<span>jkjk</span>
@@ -351,20 +355,27 @@
 	</form> -->
 	<script type="text/javascript">
 		"use strict";
-		$('.pp2').fadeOut(200)
-		.delay(200)
-		.fadeIn(800)
-		.queue(function (next) {
-			$(this).html('hello world');
-			next();
-		})
-		.queue(function (next) {
-			$(this).html('hello world3434343');
-			next();
-		})
-		.animate({
-			borderWidth: '+=4'
-		},800);
+		$.getJSON('../json/index.json',function () {
+			console.log('jkjk');
+		});
+		// $('.ll').load('index1.html',function (content,state,xhr) {
+		// 	console.log('请求结束');
+		// });
+		// $('.ll').load('url','name=zhangsan');
+		// $('.pp2').fadeOut(200)
+		// .delay(200)
+		// .fadeIn(800)
+		// .queue(function (next) {
+		// 	$(this).html('hello world');
+		// 	next();
+		// })
+		// .queue(function (next) {
+		// 	$(this).html('hello world3434343');
+		// 	next();
+		// })
+		// .animate({
+		// 	borderWidth: '+=4'
+		// },800);
 		// $('.pp2').fadeOut(2000).delay(2000).slideDown(1000)
 		// $('.pp2').bind({
 		// 	mouseenter: function () {$(this).stop(true).fadeTo(2000,.5).slideUp(800)}
