@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>第一章javascript</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../img/1.png">
 	<!-- <link title="linkt" id="linkk" rel="stylesheet" href="../css/reset.css"> -->
 	<style id="stylee" title="stylet">
 		*{
@@ -17,8 +18,9 @@
 			/* overflow: hidden; */
 		}
 		img{
-			width:50px;
-			height:50px;
+			width:100px;
+			height:100px;
+			border:1px solid red;
 		}
 		a{
 			/* display: none; */
@@ -328,22 +330,20 @@
        	padding:10px;
        }
  	</style>
- 	<div id="haha" style="position:relative;top:50px;width:200px;left:50px;border:1px solid red;">
+ 	<!-- <div id="haha" style="position:relative;top:50px;width:200px;left:50px;border:1px solid red;">
  		<p class="pp pp3" style="color:red">1</p>
  		<p class="pp" style="">2</p>
  		<p class="pp">3</p>
  		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
- 	</div>
- 	<div class="ll">
- 		<p class="zhangsan">333</p>
- 		<span>jkjk</span>
- 	</div>
+ 	</div> -->
  	<!-- <div class="ll">
  		<p class="zhangsan">333</p>
  		<span>jkjk</span>
  	</div> -->
-	<script src="../js/jquery.min.js"></script>
-	<!-- <script src="../js/md5.js"></script> -->
+ 	<!-- <div class="ll">
+ 		<p class="zhangsan">333</p>
+ 		<span>jkjk</span>
+ 	</div> -->
 	<!-- <script id="sss" type="text/x-custom-data">
 		console.log('dfdfdf');
 	</script> -->
@@ -351,13 +351,338 @@
 		<input class="inut" type="text" name="text1"><br>
 		<input type="text" name="text2"><br>
 		<input type="text" nameh="text3"><br>
-		<input type="submit">
+		<input id="sub" type="submit">
 	</form> -->
+	<!-- <div id="haha" style="position:relative;width:200px;border:1px solid red;">
+ 		<p class="pp pp3" style="color:red">1</p>
+ 		<p class="pp" style="">2</p>
+ 		<p class="pp">3</p>
+ 		<p class="pp pp2" data-val="haoaaa" data-zhangsan="lisi">4</p>
+ 	</div>
+	<div class="but-container">
+		<button type="submit">按钮</button>
+		<button type="button">按钮type</button>
+		<input type="button" value="按钮input">
+	</div> -->
+	<style>
+		/* :checked{
+			width:30px;
+			height:30px;
+		} */
+	</style>
+	<div class="jj1">
+		<div class="jj2">
+			<div class="box-container">
+				<input type="text"><br>
+				<input type="radio" class="inpp"><br class="zha">
+				1.<input type="checkbox" class="inp" name="box"><br>
+				2.<input disabled="disabled" type="checkbox" name="box"><br>
+				3.<input disabled="disabled" type="checkbox" name="box"><br>
+				4.<input type="checkbox" name="box"><br>
+				<select name="ui" id="uy">
+					<option value="12">12</option>
+					<option value="22">22</option>
+				</select>
+				<button draggable="true">点击</button>
+				<div>点了我把</div>
+			</div>
+			<img src="../img/1.png" onmouseenter="this.src='../img/1dao.png';this.style.width='150px'" onmouseleave="this.src='../img/1.png';this.style.width='120px'" alt="">
+		</div>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script id="chajian" src="../js/chajian.js?version="></script>
+	<script src="../js/md5.js"></script>
 	<script type="text/javascript">
 		"use strict";
-		$.getJSON('../json/index.json',function () {
-			console.log('jkjk');
-		});
+		
+		// jQuery.expr[':'].draggable = function (element,index,match.array) {
+		// 	return e.draggable === true;
+		// }
+		// console.log($(':draggable'));
+		// $.fn();
+		// console.log($('button').data());
+		// $('button').on('click',$('button').eventfn.cli);
+		// $('.zhangsan').sum(8,2).min(4,2).config(2,3,4);
+		// $('#chajian').attr('src','../js/chajian.js?version='+Date.now());
+		// console.log($('#chajian'));
+		// $('.zhangsan').spp(8,2);
+		// function fn (o) {
+		// 	console.log(o.a);
+		// }
+		// fn({a:12})
+		// $('input').each();
+		// console.log($('.zhangsan').sum(2,4).min(5,9));
+		// function fn () {
+		// 	this.age = 23;
+		// 	console.log(this);
+		// 	return this;
+		// }
+		// var obj = {
+		// 	name: 'zhangsan'
+		// }
+		// var fnn = fn.bind(obj);
+		// console.log(fnn());
+		// console.log(fn1.__proto__ == Function.prototype);
+		// $("li.third-item").nextAll().addBack().css("background-color", "red");
+		// $('.box-container').find('.inpp').addBack().css({
+		// 	border: '1px solid red'
+		// })
+		// console.log($('.zhangsan').end())
+		// $('.box-container').find('.inpp').css({height: '30px'}).next().end().css({
+			// border: '1px solid red'
+		// });
+		// console.log($('.inp').closest('div'));
+		// console.log($('.box-container').contents());
+		// console.log($('input').not('[type=radio]'));
+		// console.log($(':not($("input")[0])'));
+		// console.log($('input').filter('[type=radio]'));
+		// console.log($('input').slice(2));
+		// $('input').last().css({
+		// 	width: '100px',
+		// 	height: '20px'
+		// })
+		// console.log($('input + *'));
+		// $('button').click(function () {
+			// $(':selected').css({
+				// color: 'red'
+			// });
+		// })
+		// console.log($(':parent'));
+		// console.log($(':only-child'));
+		// console.log($(':even'));
+		// console.log($(':not(div)'));
+		// console.log($(':input'));
+		// console.log($(':image'));
+		// console.log($(':hidden'));
+		// $(':has(.zhangsan)').css('color','red');
+		// console.log($('p:first-child'));
+		// console.log($(':file'));
+		// console.log($(':nth-child(even)'));
+		// $('div[disabled]').click(function () {
+		// 	console.log('jk');
+		// });
+		// $(':disabled').css({
+		// 	width: '25px',
+		// 	height: '25px',
+		// 	backgroundColor: '#f00'
+		// });
+		// console.log($('.box-container')[0].textContent);
+		// $('div:contains("点击")').css({
+		// 	width: '40px',
+		// 	height: '40px'
+		// });
+		// $('button').click(function () {
+		// 	$(':checked').css({
+		// 		width: '20px',
+		// 		height: '20px'
+		// 	});
+		// })
+		// $(':checkbox').css({
+		// 	width: '20px',
+		// 	height: '20px'
+		// });
+		// $(':button').css('background','#f00');
+		// $('.pp2').animate({width: '+=100'},2000);
+		// $(':animated').css('background-color','#ff0');
+		// var str = '  zhanb   gsan  '
+		// console.log(str.trim());
+		// console.log(jQuery.support)
+		// var obj = {
+		// 	name: 'zhangsan',
+		// 	age: 23,
+		// 	a: function () {console.log(this);}
+		// }
+		// var s1 = jQuery.proxy(obj,'a');
+		// s1();
+		// function fn (a,b) {
+		// 	this.name = 'zhangsan';
+		// 	this.age = 23;
+		// 	return a+b;
+		// }
+		// var obj = {
+		// 	sex: 'nan'
+		// };
+		// var fnn = jQuery.proxy(fn,obj);
+		// fnn();
+		// console.log(obj.name);
+		// var fn1 = fn.bind(this,1);
+		// console.log(fn1(2));
+		// console.log(window);
+		// var obj = {
+		// 	name: 'zhangsan',
+		// 	age: 23
+		// };
+		// var jj = JSON.stringify(obj);
+		// var jiexi = jQuery.parseJSON(jj);
+		// console.log(jiexi);
+		// var arr1 = [1,2,3];
+		// var arr2 = [3,4,5];
+		// var newArr = jQuery.merge(arr1,arr2); // 返回arr1
+		// console.log('arr1:'+arr1);  // arr1改变了
+		// console.log('arr2:'+arr2);  // arr2没有改变
+		// console.log('newArr:'+newArr);  // 为arr1的值
+		// var arr = ['一月','二月',null,'四月'];
+		// var newArr = arr.map(function (value,index) {
+		// 	return value;
+		// });
+		// console.log(newArr); // 为['一月','二月',null,'四月']
+		// var arr = ['一月','二月',['haoa','nihao'],'四月'];
+		// var newArr = jQuery.map(arr,function (value,index) {
+		// 	return value;
+		// });
+		// console.log(newArr); // 为['一月','二月','haoa','nihao','四月']
+		// var obj = {
+		// 	name: 'zhangsan',
+		// 	age: 23
+		// };
+		// var jj = JSON.stringify(obj);
+		// var tranObj = eval('var i; i = '+jj);
+		// console.log(tranObj);
+		// var tranObj = window.eval('var i = 9;');
+		// console.log(i);
+		// console.log(window);
+		// var obj = {
+		// 	1: 'zhangsan',
+		// 	2: 'lisi',
+		// 	3: 'wangwu',
+		// 	4: 'wangwu',
+		// 	length: 6
+		// }
+		// var newArr = jQuery.makeArray(obj);
+		// console.log(newArr);
+		// var obj = {};
+		// var bool = jQuery.isPlainObject(obj);
+		// console.log(bool);
+		// function fn () {}
+		// var bool = jQuery.isFunction(alert);
+		// console.log(bool);
+		// var obj = {};
+		// var bool = jQuery.isEmptyObject(obj);
+		// console.log(bool);
+		// var arr = [1,2,3,4,5,5,6,7,8,9,10,2,3,2,2];
+		// var bool = jQuery.isArray(arr);
+		// console.log(bool);
+		// var index = jQuery.inArray(2,arr); // 2个参数 第一任意值  第二为数组或类数组
+		// console.log(index); // 第一次出现的位置  没找到为-1  与indexOf()类似
+		// var newArr = jQuery.grep(arr,function (value,index) {
+			// return value > 8
+		// },true)
+		// console.log(newArr);  // [9,10]
+		// jQuery.globalEval('var a = 34; function fn () {console.log(a)} fn();');
+		// console.log(a);
+		// console.log(window);
+		// var obj1 = jQuery.extend(true,{name: 'zhangsan',age: {
+		// 	age1: 23,
+		// 	age2: 24
+		// }},{age: {
+		// 	age1: 25
+		// }});
+		// console.log(obj1);
+		// jQuery.extend({
+		// 	fnn: 'ioi'
+		// });
+		// console.log(jQuery.fnn);
+		// jQuery.each([1,2,3,4],function (index,value) {
+		// 	console.log(index);
+		// 	console.log(this);
+		// })
+		// console.log($.contains($('.ll')[0],$('.zhangsan')[0]));
+		// console.log($.support);
+		// var ss = 'A:我是张三';
+		// console.log(ss.slice(0,2));
+		// console.log(ss.slice(2));
+		// console.log(ss);
+		// http://zjw.shanxiangjiaoyu.com/api/county?project_id=26&county_id=11
+		// var ss = 'zhangsan';
+		// $.ajax({
+		// 	type: 'get',
+		// 	url: '../js/index.js',
+		// 	data: {age: 23}, // "age=23&name=张三"
+		// 	dataType: 'text', // 期望服务器返回的格式
+		// 	contentType: 'application/x-www-form-urlencoded', // 请求头，规定请求数据的格式
+		// 	timeout: 5000,
+		// 	cache: false,
+		// 	ifModified: true,
+		// 	global: true,
+		// 	context: $('.ll'),
+		// 	jsonp: 'fn',
+		// 	jsonpCallback: 'zhixing',
+		// 	processData: false, // 不想把data中的对象 转为字符串
+		// 	scriptCharset: "UTF-8", // 指定script标签的charset属性值 只对跨域的jsonp和script有效
+		// 	tranditional: true,// 可以让data对象转为字符串后 再恢复到原对象值
+		// 	// username：'zhangsan', // 请求需要用户名验证
+		// 	password: '123456', // 请求需要密码验证
+		// 	xhr: function () { // 工厂函数  获取xhr对象 调用时不带参数  谁来调用 2
+		// 		// console.log('jkjkj');
+		// 		return new XMLHttpRequest();
+		// 	},
+		// 	// async: false, // 变成同步了，会阻塞下面代码的执行
+		// 	success: function (data,state,xhr) { // 3个参数  4
+		// 		console.log(data);
+		// 		// console.log(state);
+		// 		// console.log(this); // context对象内容
+		// 	},
+		// 	beforeSend: function (xhr,obj) { // 2个参数 1 按同步执行
+		// 		console.log('发送请求前的回调');
+		// 		// console.log(obj); // 选项对象
+		// 		// return false;  取消请求
+		// 		// 跨域的script和jsonp不会触发这个回调
+		// 	},
+		// 	error: function (xhr,state) { // 2个参数
+		// 		console.log('state error'); 
+		// 		console.log(state);
+		// 		// 当浏览器返回的数据格式不是期望的时，执行error，状态码是parsererror
+		// 	},
+		// 	complete: function (xhr,state) { // 2个参数  5
+		// 		console.log('state complete'); 
+		// 	},
+		// 	dataFilter: function (data,type) {  // 3
+		// 		// console.log(data); // 响应的数据
+		// 		console.log(type); // dataType的值
+		// 		return '处理了' // 改变success回调中data的数据
+		// 		// 跨域的script和jsonp不会触发这个回调
+		// 		// 在JSON解析和脚本执行前执行
+		// 		// 写了该函数 则必须要有返回值 该值会替换掉服务器的响应
+		// 	}
+		// })
+		// $('.ll').bind('ajaxSend',function (event,xhr,obj) { // 3个参数
+		// 	console.log('发送前bind');
+		// 	// event用途不大  可以xhr设置请求头  obj是配置项
+		// 	// ajaxError事件还有第4个参数  Error对象 抛出异常
+		// 	// ajaxStart 、ajaxStop事件函数不带额外参数
+		// })
+		// $('.ll').ajaxSend(function () {
+		// 	console.log('发送前Send');
+		// })
+		// console.log('wozai dibu');
+		// var obj = {
+		// 	name: 'zhangsan',
+		// 	_fn: function () {
+		// 		console.log('_fn');
+		// 	}
+		// }
+		// var fn = function () {
+		// 	console.log('fn表达式');
+		// }
+		// function fn1 () {
+		// 	console.log('fn1函数声明');
+		// }
+		// var fn2 = obj._fn;
+		// fn2();
+		// var obj = {
+		// 	name: '张三',
+		// 	age: 23
+		// }
+		// console.log($.param(obj));
+		// $('#sub').click(function () {
+		// 	console.log($($('form')[0]).serialize());
+		// })
+		// $.get('url',{name:"zhangsan"},fn,'json');
+		// $.getScript('https://code.jquery.com/jquery-3.4.1.min.js',function (content,state,xhr) {
+		// 	console.log(content);
+		// 	console.log(state);
+		// 	console.log(xhr);
+		// });
 		// $('.ll').load('index1.html',function (content,state,xhr) {
 		// 	console.log('请求结束');
 		// });
